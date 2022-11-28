@@ -11,24 +11,20 @@ export function SwitchToggle() {
     const theme = useMantineTheme();
 
     return (
-        <Group position="right" >
-            <>
-                <Switch
-                    checked={colorScheme === "dark"}
-                    onChange={() => toggleColorScheme()}
-                    size="lg"
-                    onLabel={
-                        <IconSun color={theme.white} size={20} stroke={1.5} />
-                    }
-                    offLabel={
-                        <IconMoonStars
-                            color={theme.colors.gray[6]}
-                            size={20}
-                            stroke={1.5}
-                        />
-                    }
-                />
-            </>
+        <Group mt="xs" position="center" align="center">
+            <Switch
+                checked={colorScheme === "dark"}
+                onChange={() => toggleColorScheme()}
+                size="lg"
+                onLabel={<IconSun color={theme.white} size="lg" stroke={1.5} />}
+                offLabel={
+                    <IconMoonStars
+                        color={theme.colors.gray[6]}
+                        size="lg"
+                        stroke={1.5}
+                    />
+                }
+            />
         </Group>
     );
 }
