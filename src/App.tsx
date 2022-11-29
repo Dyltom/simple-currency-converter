@@ -116,7 +116,7 @@ function App(props: { colorScheme: ColorScheme }) {
                         align="center"
                         style={{ minHeight: "100vh", margin: "0" }}
                     >
-                        <Grid.Col span={4}>
+                        <Grid.Col lg={4} md={6} sm={6}>
                             <Title order={1} align="center">
                                 Currency Converter
                             </Title>
